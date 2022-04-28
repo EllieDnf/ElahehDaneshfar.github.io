@@ -9,12 +9,15 @@ body{
 }
 h1{
   color: #A4A400;
-  background-color: #F0F0F0;
   font-family: Lucida Sans Unicode, Helvetica, Arial,sans-serif;
   font-size: 22pt;
   text-align: center;
   text-decoration: underline;
   letter-spacing: .25rem;}
+  h1 span{
+    background-color: #F0F0F0;
+
+  }
 h2{
   color: #A4A400;
   font-family: Lucida Sans Unicode, Helvetica, Arial;
