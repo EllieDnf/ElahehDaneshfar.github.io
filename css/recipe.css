@@ -14,12 +14,14 @@ h1{
   font-size: 22pt;
   text-align: center;
   text-decoration: underline;
-}
+  letter-spacing: .25rem;}
 h2{
   color: #A4A400;
   font-family: Lucida Sans Unicode, Helvetica, Arial;
   font-size: 18;
   text-decoration: underline;
+  letter-spacing: .25rem;}
+
 }
 blockquote{
   font-style: italic;
