@@ -3,6 +3,8 @@ body{
   font-family: Georgia,Garamond,serif;
   color: #404040;
   font-size:11pt;
+  background-image:url("silverware.jpg");
+  background-repeat: repeat;
 
 }
 h1{
@@ -22,6 +24,9 @@ h2{
 blockquote{
   font-style: italic;
   background-color: #FFFFA8 ;
+}
+ul {
+  list-style-image: url("pie_icon.gif");
 }
 .links{
   color: #A4A400 ;
