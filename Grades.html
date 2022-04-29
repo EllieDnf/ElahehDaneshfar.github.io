@@ -4,14 +4,15 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/gradesStyles.css">
   <title>Retrive Grades</title>
 </head>
 
 <body>
-  <div class="info">
   <h1>Retrieve your grade</h1>
+  <div class="info">
   <form class="StudentInfo" action="index.html" method="post">
-    <h2>Enter your name and student Id</h2>
+    <h3>Enter your name and student Id</h3>
     <table class="nameAndId">
       <tr>
         <td><label for="name">Name:</label< /td>
@@ -25,7 +26,7 @@
     </table>
   </div>
     <div class="entry">
-      <h2>please select your Entry:</h2>
+      <h3>please select your Entry:</h3>
       <input type="radio" name="Entry" value="February">
       <label for="Entry">February</label> <br>
       <input type="radio" name="Entry" value="May">
@@ -38,9 +39,9 @@
     <div class="honesty">
       <input type="checkbox" name="honesty" value="">
       <label for="hinesty">I'm just looking for my grade.</label>
+      <button type="login" form="StudentInfo" value="login">login</button>
     </div>
   </form>
-    <button type="login" form="StudentInfo" value="login">login</button>
 </body>
 
 </html>

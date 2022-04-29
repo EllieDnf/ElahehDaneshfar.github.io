@@ -1,0 +1,19 @@
+body{
+}
+div.info{
+  width: 50%;
+  height: 139px;
+  position: absolute;
+}
+div.entry{
+  width:50%;
+  position: absolute;
+  right: 0;
+}
+div.honesty{
+  position: absolute;
+  top: 250px;
+text-align: center;
+  width: 100%;
+
+}
