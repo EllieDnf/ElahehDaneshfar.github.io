@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>signup page</title>
+    <link rel="stylesheet" href="css/signUpPageStyle.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+<body>
+  <h1>nurd Luve</h1>
+  <form class="" action="index.html" method="post">
+    <table>
+      <tr>
+        <td> <label for="name">Name: </label> </td>
+        <td><input type="text" id="name" name="name" required maxlength="16"></td>
+      </tr>
+      <tr>
+        <td><label for="gender">Gender: </label></td>
+        <td>
+        <input type="radio" id="gender" name="age" value="female" checked="checked">
+        <label for="gender">Female</label><br>
+        <input type="radio" id="Mgender" name="age" value="male">
+        <label for="gender">Male</label>
+      </td>
+      </tr>
+      <tr>
+        <td><label for="age">Age: </label></td>
+        <td><input type="text" name="age" id="age" value="" required maxlength="2" size="6"></td>
+      </tr>
+      <tr>
+        <td><label for="personalityType"> <a href="https://www.humanmetrics.com/personality/test">Personality type:</a></label></td>
+        <td><input type="text" name="personalityType" id="personalityType" value="" required maxlength="4" size="6"> (<span class="type">Don't know your type?</span> ) </td>
+      </tr>
+      <tr>
+        <td><label for="faveOs">Favorite OS:</label></td>
+        <td><select class="faveOs" name="faveOs" id="faveOs">
+          <option value="windows">Windows</option>
+          <option value="mac">Mac OS X</option>
+          <option value="linux">Linux</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td><label for="minAge" >Seeking age: </label></td>
+        <td><input type="text" name="min" id="minAge" value="" required maxlength="2" size="6" placeholder="min">
+        <input type="text" id="maxAge" name="max" value="" maxlength="2" size="6" placeholder="max"></td>
+      </tr>
+      <tr>
+        <td><input type="submit" name="submit" value="Submit" onclick="YOU"></td>
+        <td></td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>

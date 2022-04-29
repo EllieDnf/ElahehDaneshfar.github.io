@@ -1,0 +1,21 @@
+form{
+  padding: 10px;
+  background-color: #EAF6F6;
+  border: solid;
+  border-radius: 10px;
+  border-width: medium;
+  border-color: grey;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+h1{
+font-family: cursive;
+}
+.type{
+  color: #F76B8A;
+}
+input[type=Submit]{
+  background-color: #F76B8A;
+}
