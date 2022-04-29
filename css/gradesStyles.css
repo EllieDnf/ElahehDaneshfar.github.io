@@ -1,12 +1,12 @@
 body{
 }
 div.info{
-  width: 50%;
+  width: 48%;
   height: 139px;
   position: absolute;
 }
 div.entry{
-  width:50%;
+  width:48%;
   position: absolute;
   right: 0;
 }
