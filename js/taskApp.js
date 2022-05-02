@@ -10,6 +10,7 @@ window.onload = function() {
     if (existingTasksList == null){
       existingTasksList = "";
       i=1;
+      
     }
     localStorage.setItem("newTask", newTask);
     existingTasksList+=i+". "+newTask+"<br>";
