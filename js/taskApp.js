@@ -1,20 +1,16 @@
 window.onload = function() {
-  let i;
 
   document.getElementById("addTask").addEventListener("click", addTask);
   function addTask(event) {
     event.preventDefault();
     var existingTasksList = localStorage.getItem("tasksList");
     var newTask = document.getElementById("inputTask").value;
-
     if (existingTasksList == null){
       existingTasksList = "";
-      i=1;
-      
+      let taskNum=0;
     }
     localStorage.setItem("newTask", newTask);
-    existingTasksList+=i+". "+newTask+"<br>";
-    i++;
+    existingTasksList+="** "+newTask+"<br>";
     localStorage.setItem("tasksList", existingTasksList);
     document.getElementById("taskList").innerHTML = localStorage.getItem("tasksList");
   }
