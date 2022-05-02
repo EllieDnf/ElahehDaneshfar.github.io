@@ -1,15 +1,20 @@
 window.onload = function() {
+  let i;
 
   document.getElementById("addTask").addEventListener("click", addTask);
-
   function addTask(event) {
     event.preventDefault();
-    var existingTasksList = JSON.parse(localStorage.getItem("tasksList"));
-    var newTask=document.getElementById("inputTask").value;
-    if (existingTasksList == null) existingTasksList = [];
-    localStorage.setItem("newTask",newTask );
-    existingTasksList.push(newTask);
-    localStorage.setItem("tasksList",JSON.stringify(existingTasksList));
+    var existingTasksList = localStorage.getItem("tasksList");
+    var newTask = document.getElementById("inputTask").value;
+
+    if (existingTasksList == null){
+      existingTasksList = "";
+      i=1;
+    }
+    localStorage.setItem("newTask", newTask);
+    existingTasksList+=i+". "+newTask+"<br>";
+    i++;
+    localStorage.setItem("tasksList", existingTasksList);
     document.getElementById("taskList").innerHTML = localStorage.getItem("tasksList");
   }
 
@@ -24,7 +29,7 @@ window.onload = function() {
   }
   document.getElementById("showTasks").addEventListener("click", showTasks);
 
-  function showTasks(event){
+  function showTasks(event) {
     event.preventDefault();
     document.getElementById("taskList").innerHTML = localStorage.getItem("tasksList");
   }
