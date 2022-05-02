@@ -1,0 +1,36 @@
+
+form {
+  background-color: #99DDCC;
+  width: fit-content;
+  height:fit-content;
+  margin: auto;
+  border-radius: 10px;
+  border-color: grey;
+  border-style: solid;
+  border-width: 2px;
+  padding: 10px;
+}
+p{
+  border: solid;
+  border-width: thin;
+  border-color: grey;
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  margin-top: 0;
+  display: table;
+}
+h3{
+margin-top: 0;
+margin-bottom: 10px;
+}
+
+input[type="button"] {
+  margin-top: 5px;
+  align-items: center;
+}
+
+td {
+    display: table-cell;
+    vertical-align: top;
+}
