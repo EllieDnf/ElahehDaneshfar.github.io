@@ -2,6 +2,9 @@ alert("hello, world!");
 window.onload = function() {
   document.querySelector("#bigDecoration").addEventListener("click", increaseFontReguraly);
   document.querySelector("#bling").addEventListener("change", decTextArea);
+  document.querySelector("#igpay").addEventListener("click", myIgpay);
+  document.querySelector("#malkovitch").addEventListener("click", malkovich);
+
 }
 
 
@@ -12,7 +15,7 @@ function increaseFont() {
   el.style.fontSize = (fontSize + 2) + 'px';
 }
 
-function increaseFontReguraly(){
+function increaseFontReguraly() {
   setInterval(increaseFont, 500);
 }
 
@@ -27,7 +30,26 @@ function decTextArea() {
     myText.style.fontWeight = "normal";
     myText.style.color = "black";
     myText.style.textDecoration = "none";
-    body.style.backgroundImage ="none";
+    body.style.backgroundImage = "none";
 
   }
+}
+
+function myIgpay() {
+  let data = myText.value;
+  for (let i = 0; i < data.length;) {
+    if (isVowel(data[i].toLowerCase())) {
+      data += "ay";
+      break;
+    } else data = data.substring(1) + data[i];
+  }
+  myText.value = data;
+}
+
+function isVowel(c) {
+  return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
+}
+
+function malkovich() {
+  if (myText.value.length >= 5) myText.value = 'Malkovich';
 }
